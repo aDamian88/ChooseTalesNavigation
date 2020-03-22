@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="gr.choosetales.adam.choosetalesnavigation.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondCFragment"
+            app:destination="@id/secondCFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_secondBFragment3"
+            app:destination="@id/secondBFragment3" />
+        <action
+            android:id="@+id/action_firstFragment_to_secondAFragment3"
+            app:destination="@id/secondAFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondCFragment"
+        android:name="gr.choosetales.adam.choosetalesnavigation.secondpage.SecondCFragment"
+        android:label="fragment_second_c"
+        tools:layout="@layout/fragment_second_c" >
+        <action
+            android:id="@+id/action_secondCFragment_to_thirdDFragment"
+            app:destination="@id/thirdDFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdAFragment"
+        android:name="gr.choosetales.adam.choosetalesnavigation.thirdpage.ThirdAFragment"
+        android:label="fragment_third_a"
+        tools:layout="@layout/fragment_third_a" >
+        <action
+            android:id="@+id/action_thirdAFragment_to_fourthAFragment"
+            app:destination="@id/fourthAFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondAFragment3"
+        android:name="gr.choosetales.adam.choosetalesnavigation.secondpage.SecondAFragment"
+        android:label="fragment_second_a"
+        tools:layout="@layout/fragment_second_a" >
+        <action
+            android:id="@+id/action_secondAFragment3_to_thirdAFragment"
+            app:destination="@id/thirdAFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondBFragment3"
+        android:name="gr.choosetales.adam.choosetalesnavigation.secondpage.SecondBFragment"
+        android:label="fragment_second_b"
+        tools:layout="@layout/fragment_second_b" >
+        <action
+            android:id="@+id/action_secondBFragment3_to_thirdBFragment"
+            app:destination="@id/thirdBFragment" />
+        <action
+            android:id="@+id/action_secondBFragment3_to_thirdCFragment"
+            app:destination="@id/thirdCFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdBFragment"
+        android:name="gr.choosetales.adam.choosetalesnavigation.thirdpage.ThirdBFragment"
+        android:label="fragment_third_b"
+        tools:layout="@layout/fragment_third_b" >
+        <action
+            android:id="@+id/action_thirdBFragment_to_fourthBFragment"
+            app:destination="@id/fourthBFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdCFragment"
+        android:name="gr.choosetales.adam.choosetalesnavigation.thirdpage.ThirdCFragment"
+        android:label="fragment_third_c"
+        tools:layout="@layout/fragment_third_c" >
+        <action
+            android:id="@+id/action_thirdCFragment_to_fourthBFragment"
+            app:destination="@id/fourthBFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdDFragment"
+        android:name="gr.choosetales.adam.choosetalesnavigation.thirdpage.ThirdDFragment"
+        android:label="fragment_third_d"
+        tools:layout="@layout/fragment_third_d" >
+        <action
+            android:id="@+id/action_thirdDFragment_to_fourthCFragment"
+            app:destination="@id/fourthCFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourthAFragment"
+        android:name="gr.choosetales.adam.choosetalesnavigation.fourthpage.FourthAFragment"
+        android:label="fragment_fourth_a"
+        tools:layout="@layout/fragment_fourth_a" />
+    <fragment
+        android:id="@+id/fourthBFragment"
+        android:name="gr.choosetales.adam.choosetalesnavigation.fourthpage.FourthBFragment"
+        android:label="fragment_fourth_b"
+        tools:layout="@layout/fragment_fourth_b" />
+    <fragment
+        android:id="@+id/fourthCFragment"
+        android:name="gr.choosetales.adam.choosetalesnavigation.fourthpage.FourthCFragment"
+        android:label="fragment_fourth_c"
+        tools:layout="@layout/fragment_fourth_c" />
+    <fragment
+        android:id="@+id/inventoryFragment"
+        android:name="gr.choosetales.adam.choosetalesnavigation.InventoryFragment"
+        android:label="fragment_inventory"
+        tools:layout="@layout/fragment_inventory" />
+</navigation>
